@@ -1,5 +1,5 @@
 package edu.uaslp.objetos.shoppingcart;
-/**/
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
