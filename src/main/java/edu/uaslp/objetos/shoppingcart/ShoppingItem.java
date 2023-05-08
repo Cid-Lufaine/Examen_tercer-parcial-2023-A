@@ -14,6 +14,7 @@ public final class ShoppingItem {
         this.unitCostInCents = unitCostInCents;
     }
 
+
     public String getName() {
         return name;
     }
