@@ -16,6 +16,7 @@ public class Exercise3ShoppingItemCatalog {
         ShoppingCart shoppingCart = new ShoppingCart(shoppingItemCatalog);
         String itemCode = "9785";
         ShoppingItem shoppingItem = shoppingItemCatalog.getItem(itemCode);
+        when(shoppingItemCatalog.getItem(itemCode)).thenThrow(new ItemNotFoundException("Item with code 9785 not found"));
 
         Assertions.assertThat(shoppingItem.getCode()).isEqualTo(null);
 
